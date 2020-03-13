@@ -1,0 +1,30 @@
+@import 'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+    color: #333333;
+}
+
+a {
+    text-decoration: none;
+    color: set-color($main-color);
+}
+
+ul {
+    list-style: none;
+}
+
+h2 {
+    color: #111;
+    font-size: 2rem;
+}
+
+img {
+    width: 100%;
+}

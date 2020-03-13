@@ -1,0 +1,71 @@
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bottom-line {
+    display: block;
+    margin: 1rem auto;
+    height: 2px;
+    width: 6rem;
+    background-color: $dark-color; 
+}
+// Button
+%btn {
+    display: inline-block;
+    padding: 1.2rem 2.4rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    margin: 3px;
+    transition: all 0.4s;
+}
+
+.btn {
+    &-light {
+        @extend %btn;
+        background: $light-color;
+        color: set-color($light-color);
+
+        &:hover {
+            background: $dark-color;
+            color: set-color($dark-color);
+        }
+    }
+
+    &-dark {
+        @extend %btn;
+        background: $dark-color;
+        color: set-color($dark-color);
+
+        &:hover {
+            background: $light-color;
+            color: set-color($light-color);
+        }
+    }
+}
+// Padding
+.py {
+    &-1 {padding: 1rem 0;}
+    &-2 {padding: 2rem 0;}
+    &-3 {padding: 3rem 0;}
+    &-4 {padding: 4rem 0;}
+}
+// Margin
+.my {
+    &-1 {margin: 1rem 0;}
+    &-2 {margin: 2rem 0;}
+    &-3 {margin: 3rem 0;}
+    &-4 {margin: 4rem 0;}
+}
+// Background
+.bg {
+    &-main {background: $main-color;}
+    &-light {background: $light-color;}
+}

@@ -1,0 +1,17 @@
+$main-color: #a8e6cf;
+$light-color: #f0efef;
+$dark-color: #222;
+
+// Function
+@function set-color ($color) {
+    @if (lightness($color) > 70) {
+        @return #333;
+    } @else {
+        @return #fff;
+    }   
+}
+// Mixin
+@mixin color ($color){
+    background: $color;
+    color: set-color($color);
+}
